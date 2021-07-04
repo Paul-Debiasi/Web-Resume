@@ -1,0 +1,156 @@
+@media screen and (max-width: 1100px) {
+  .hover-underline-animation {
+    width: 75%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+.paul-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px white solid;
+  transition: all 0.3s;
+}
+
+.hover-rotate img {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.hover-rotate:hover img {
+  transform: scale(1.3) rotate(5deg);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5;
+  width: 34%;
+  height: 100vh;
+  border-right: white 3px solid;
+}
+
+.nav {
+  height: 33vh;
+  font-family: Montserrat, "sans-serif", Helvetica;
+  letter-spacing: 2px;
+  padding: 0;
+}
+
+.nav li {
+  list-style-type: none;
+  margin: 45% 0;
+}
+
+.hover-underline-animation {
+  display: flex;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #86bdc2;
+  padding: 3px;
+  border-radius: 3px;
+  border: white 1px solid;
+  cursor: pointer;
+}
+
+.nav a:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(3px);
+}
+
+.nav a:hover {
+  color: #86bdc2;
+  background-color: white;
+}
+
+.right {
+  background-color: #86bdc2;
+  width: 66%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Montserrat, "sans-serif", Helvetica;
+  color: white;
+}
+
+.about {
+  height: 50vh;
+  width: 66%;
+}
+
+.about h1 {
+  font-family: "Work-Sans", "sans-serif", Helvetica;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: 14px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.line-container {
+  width: 50%;
+  overflow: hidden;
+}
+
+.about span {
+  font-size: 2.5em;
+}
+
+.about a {
+  margin-right: 5%;
+}
+
+.about img {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.about img:hover {
+  background-color: transparent;
+}
+
+.about h3 {
+  font-size: 24px;
+}
+
+.about p {
+  font-size: 18px;
+}
