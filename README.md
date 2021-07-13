@@ -1,6 +1,6 @@
 # Creating a web Resume
 
-### A small project to kip practicing.
+### A small project to keep practicing.
 
 The focus is work mostly on CSS, a bit of JS needed.  
 
